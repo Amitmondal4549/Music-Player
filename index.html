@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MUSIC PLAYER</title>
+   <link rel="icon" href="images/LOGO.jpg" type="image/jpeg">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+      <ul>
+         <li class="brand"><img src="images/LOGO.jpg" alt="Music Player">MUSIC PLAYER</li>
+      </ul>
+   </nav>
+   <div class="container">
+      <div class="songlistscroll">
+      <div class="songlist">
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover1.jpg" alt=""><span class="songName"><strong>IN MY BED</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>4:17</strong>&nbsp;<i id="0" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover2.jpg" alt=""><span class="songName"><strong>SORRY</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:18</strong>&nbsp;<i id="1" class="fa-regular  songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover3.jpg" alt=""><span class="songName"><strong>FALLING</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>2:39</strong>&nbsp;<i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover4.jpg" alt=""><span class="songName"><strong>IN THE END</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:38</strong>&nbsp;<i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover5.jpg" alt=""><span class="songName"><strong>BROKEN ANGEL</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:25</strong>&nbsp;<i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover6.jpg" alt=""><span class="songName"><strong>SUMMERTIME SADNESS</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>4:25</strong>&nbsp;<i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover7.jpg" alt=""><span class="songName"><strong>STARBOY</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>8:13</strong>&nbsp;<i id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover8.jpg" alt=""><span class="songName"><strong>ORDINARY</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:06</strong>&nbsp;<i id="7" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover9.jpg" alt=""><span class="songName"><strong>UNFORGETTABLE</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:50</strong>&nbsp;<i id="8" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+         <div class="songitemcontainer">
+            <div class="songitem">
+               <img src="/images/cover10.jpg" alt=""><span class="songName"><strong>LET ME LOVE YOU</strong></span>
+               <span class="songlistplay"><span class="timestamp"><strong>3:25</strong>&nbsp;<i id="9" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="songbanner"></div>
+   </div>
+   <div class="bottom">
+      <input type="range" name="range" id="progressbar" min="0" value="0" max="100">
+      <div class="icons">
+         <i class="fa-solid fa-2x fa-backward-step" id="previous"></i> 
+        <i class="fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+      </div>
+      <div 
+         class="songinfo"><img src="/images/info.gif" width="83px" height="12px" alt="" id="gif"><span id="masterSongName"><strong>IN MY BED</strong></span>
+      </div>
+   </div>
+   <script src="https://kit.fontawesome.com/6435366c0e.js" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+</body>
+</html>
