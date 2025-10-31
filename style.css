@@ -6,11 +6,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  overflow: auto; /* ✅ Allow scrolling */
+}
+
 body {
   background-color: #252525;
   font-family: 'Varela Round', sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 /* ---------nav------- */
@@ -46,7 +51,7 @@ nav ul li {
 
 /* --------------Container------------- */
 .container {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 75px); /* ✅ Match nav height */
   width: 77%;
   margin: 12px auto;
   border-radius: 10px;
@@ -59,6 +64,7 @@ nav ul li {
   overflow: hidden;
   position: relative;
 }
+
 .container::after {
   content: "";
   position: absolute;
@@ -69,12 +75,22 @@ nav ul li {
   background: linear-gradient(to left, rgba(0,0,0,0.6), transparent);
   pointer-events: none;
 }
+
 /* ----------song Item----------- */
 .songlistscroll {
   flex: 1;
   overflow-y: auto;
-  padding: 20px 0 100px 40px; /* left padding + bottom space for footer */
+  padding: 20px 0 120px 40px; /* ✅ Extra bottom padding for fixed player */
 }
+
+.songlistscroll::-webkit-scrollbar {
+  width: 6px;
+}
+.songlistscroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
 .songlist h1 {
   margin-bottom: 20px;
   text-align: left;
@@ -121,6 +137,7 @@ nav ul li {
   cursor: pointer;
 }
 
+/* ----------Bottom Player----------- */
 .bottom {
   position: fixed;
   bottom: 0;
@@ -134,10 +151,12 @@ nav ul li {
   flex-direction: column;
   z-index: 10;
 }
+
 #progressbar {
   width: 80vw;
   cursor: pointer;
 }
+
 .icons {
   cursor: pointer;
 }
@@ -153,7 +172,7 @@ nav ul li {
   transition: opacity 0.2s ease-in;
 }
 
-/* Responsive */
+/* ----------Responsive----------- */
 @media (max-width: 480px) {
   .container {
     width: 92%;
@@ -166,7 +185,7 @@ nav ul li {
   }
 
   .songlistscroll {
-    padding-left: 0;
+    padding: 20px 0 140px 0; /* ✅ Match .bottom height + margin */
     align-items: center;
   }
 
